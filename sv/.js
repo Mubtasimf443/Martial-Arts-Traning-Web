@@ -36,7 +36,7 @@ app.get('/img/:name', (req, res) => {
 })
 
 
-app.get('*',(req, res) => res.render('home') )
+app.get('*',(req, res) => res.render('Home') )
 
 
 
