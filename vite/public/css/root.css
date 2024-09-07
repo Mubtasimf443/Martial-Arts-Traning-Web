@@ -1,0 +1,16 @@
+
+:root {
+    --more-red-color : #9d0208; 
+    --bright-red-cl:#bf0603 ;
+    /* color */
+    --main-bg :#000000;
+    --s-bg-color :#370617;
+    --df--color : #866565;
+    /* font */
+    --first-fs : 16px;
+    --first-fw : 500;
+    /* border  */
+    --df-b-w : 2px;
+    --df-b-color : #866565 ;
+    --gradian-effect :linear-gradient( to right, #000000e0, #180101c4);
+}

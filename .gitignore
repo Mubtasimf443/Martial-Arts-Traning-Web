@@ -1,1 +1,4 @@
 /sv/node_modules
+/viteapp/node_modules
+/viteapp/dist
+/vite/node_modules
