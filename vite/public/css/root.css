@@ -1,10 +1,23 @@
+/*
+بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ  ﷺ  
+InshaAllah, By his marcy I will Gain Success 
+*/
+
 
 *{
-    font-family: "Poppins", sans-serif;
+    
+    font-family:"Libre Franklin",sans-serif ;
+    /* font-family: "Libre Franklin", sans-serif; */
     margin: 0px;
     padding: 0px;
     row-gap: 0px;
 }
+
+h1 , h2 ,h3 ,b {
+    line-height: 1.2em;
+    font-weight: 500;
+}
+
 
 :root {
     --main-cl :#ffaa1c; /* my- #ca8401 */ /*client #ffaa1c*/
@@ -22,3 +35,10 @@
     --df-b-color : #866565 ;
     --gradian-effect :linear-gradient( to right, #00000093, #00000081);
 }
+
+
+button ,i{
+    cursor: pointer;
+}
+
+

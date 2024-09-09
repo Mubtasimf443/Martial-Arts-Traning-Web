@@ -15,17 +15,15 @@ let VisibilityObserver = new IntersectionObserver(entries => {
     if (entries[0].isIntersecting) {
         header.style.backgroundColor = 'transparent';
         headerAnchor.forEach(anchor => anchor.style.color ='#fff');
-        header.style.boxShadow = '0px 0px 10px rgba(0,0,0,0)';
         headerIcon.setAttribute('src','/img/newhi.jpg');
-        headerNavIcon.style.color= 'rgba(255, 255,255,.85)';
+        headerNavIcon.style.color= 'white';
         return
     }
     if (!entries[0].isIntersecting) {
-        header.style.backgroundColor = 'white';
+        header.style.backgroundColor =  'transparent';;
         headerAnchor.forEach(anchor => anchor.style.color ='#000');
-        header.style.boxShadow = '0px 0px 10px rgba(0,0,0,0.15)';
         headerIcon.setAttribute('src' ,'/img/n.png');
-        headerNavIcon.style.color= 'rgba(0,0,0,1)';
+        headerNavIcon.style.color= 'black';
 
         return
     }

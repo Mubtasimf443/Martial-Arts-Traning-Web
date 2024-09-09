@@ -181,7 +181,7 @@ header > .m_nav_i , header > .m_nav {
         min-height: 5em;
         background: transparent;
         position: fixed;
-        z-index: 100;
+        z-index: 300;
     }
     
     header > .hd-icon-div{
@@ -216,9 +216,9 @@ header > .m_nav_i , header > .m_nav {
      
     header > nav > div > a {
         color:white;
-        opacity: .85;
         text-decoration: none;
         font-size: var(--first-fs);
+        font-weight: 500;
     }
     
     header > .hd-btn-div{
@@ -231,12 +231,17 @@ header > .m_nav_i , header > .m_nav {
     }
      
     header > .hd-btn-div >button{
-       width: 7.7em;
-       height: 3.3em;
-       background: transparent;
-       color: var(   --main-cl);
-       border: var(--df-b-w) solid var(--main-cl);
+       width: 8.5em;
+       height: 2.7em;
+       border: none;
+       color: white;
+       font-family: "Roboto Slab";
+       background-color: var(   --main-cl);
+       text-transform: uppercase;
        border-radius: 8px;
+       font-weight: 500;
+       line-height: 0px;
+       font-size: .9em;
        
     }
 

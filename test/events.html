@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+   
+</head>
+<body>
+    <section id="event_section">
+        
+            <h2>Upcoming Events </h2>
+            <div class="">
+                <div class="event_box">
+                    <img src="http://localhost:5173/img/karate_img.png" alt="">
+                    <div class="div1">
+                        <div>
+                            <b>Martial Arts Campionship</b>
+                            <span>In Australiya</span>
+                        </div>
+                        <div>
+                            <span>March</span>
+                            <b>30</b>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="div2">
+                        <span>30 countries</span>
+                        <span>600 Athlete</span>                       
+                    </div>
+                </div>
+                <div class="event_box">
+                    <img src="http://localhost:5173/img/karate_img.png" alt="">
+                    <div class="div1">
+                        <div>
+                            <b>Martial Arts Campionship</b>
+                            <span>In Australiya</span>
+                        </div>
+                        <div>
+                            <span>March</span>
+                            <b>30</b>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="div2">
+                        <span>30 countries</span>
+                        <span>600 Athlete</span>                       
+                    </div>
+                </div>
+            </div>
+        
+    </section>
+
+
+    <style>
+        
+        #event_section { 
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: start;
+            background: rgb(255, 255, 255);
+            padding: 3em 4em;
+   
+        }
+        #event_section > h2{
+            color: rgb(0, 0, 0);
+            text-transform: uppercase;
+            font-size: 1.14em;
+        }
+        #event_section > div {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            column-gap: 2em;
+            row-gap: 2em;
+            margin-top: 2em;
+        }
+        #event_section > div > div {
+            width: 31em;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 2em 2em;
+            background: #fff;
+            border-radius:10px ;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.158);
+           
+        }
+        #event_section > div > div > img {
+            width: 100%;
+            margin-bottom: 1em;
+            height: 14em;
+            object-fit: cover;
+            object-position: bottom center;
+        }
+        #event_section > div > div >.div1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+
+        }
+        #event_section > div > div >hr {
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.103);
+            height: 1.6px;
+            border: none;
+            margin: .9em 0px;
+        }
+        #event_section > div > div >.div2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+
+        }
+        #event_section > div > div >.div1 > div:nth-child(1){
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            align-items: start;
+        }
+        #event_section > div > div >.div1 > div:nth-child(2){
+            display: flex;
+            flex-direction: row;
+            justify-content:left;
+            align-items: end;
+            column-gap: .4em;
+        }
+        #event_section > div > div >.div1 > div:nth-child(1) > b {
+            font-size: 1.35em;
+        }
+        #event_section > div > div >.div1 > div:nth-child(1) > span {
+            font-weight: 500;
+            color: rgba(0, 0, 0, 0.849);
+        }
+        #event_section > div > div >.div1 > div:nth-child(2) > b {
+            font-size: 1.6em;
+        }
+        #event_section > div > div >.div1 > div:nth-child(2) > span {
+            font-size: .8em;
+            font-weight: 500;
+        }
+        #event_section > div > div >.div2 > span {
+            font-size: .95em;
+            font-weight: 500;
+        }
+    </style>
+</body>
+</html>
