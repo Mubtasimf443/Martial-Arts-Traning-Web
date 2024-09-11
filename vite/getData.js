@@ -19,7 +19,6 @@ async function getFile(array,path) {
         data = data + d
          }
         );
-    
     fs.writeFileSync(resolve(__dirname,'./' + Date.now() + '.' + path), data)
 }
 let cssArray =['root.css','loader.css' ,'footer.css', 'header.css','hero.css','mobile.css','style.css','tablet.css'] 

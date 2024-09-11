@@ -22,17 +22,14 @@ InshaAllah, By his marcy I will Gain Success
     <title>
       Home | Goju Shin Ryu
     </title>
-    <link rel="Icon" href="/img/n.png">
+    <link rel="Icon" href="/img/link_icon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
-    
-    <!--
+<!--   
     <link rel="stylesheet" href="/css/root.css">
-    <link rel="stylesheet" href="/css/loader.css">
-    <script src="/js/loader.js"></script>
-    <script  src="/js/HomeLoaderAndPopup.js"></script>
+    <link rel="stylesheet" href="/css/loader.css"> 
     <link rel="stylesheet" href="/css/hero.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/mobile.css"> 
@@ -40,10 +37,11 @@ InshaAllah, By his marcy I will Gain Success
     <link rel="stylesheet" href="/css/popup.css">
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/footer.css">
+    <script src="/js/loader.js"></script>
+    <script  src="/js/HomeLoaderAndPopup.js"></script>
     <script defer src="/js/hero.video.js"></script>
     <script defer src="/js/header.js"></script>
-    -->
-
+  -->
 <!-- style  -->
 <style>
     /*
@@ -82,7 +80,15 @@ h1 , h2 ,h3 ,b {
     --df-b-w : 2px;
     --df-b-color : #866565 ;
     --gradian-effect :linear-gradient( to right, #00000093, #00000081);
-}/*
+}
+
+
+button ,i{
+    cursor: pointer;
+}
+
+
+/*
 بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ  ﷺ  
 InshaAllah, By his marcy I will Gain Success 
 */
@@ -125,28 +131,6 @@ InshaAllah, By his marcy I will Gain Success
 }
 
 
-@media screen  and (min-width :1000px){
-    
-#Loader{
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background: rgb(0, 0, 0);
-    z-index: 1000;
-}
-
-#Loader > img {
-    width: 9em;
-    border-radius: 50%;
-    opacity: .1;
-}
-
-}
-
 
 @media screen  and (min-width :100px) and (max-width :630px){
 
@@ -178,11 +162,11 @@ InshaAllah, By his marcy I will Gain Success
 
 @keyframes loadingOpacity {
     from{
-        opacity:0.04;
+        opacity:0.01;
       }
 
     to{
-        opacity: 0.8;
+        opacity: 1;
       }
 }
 
@@ -196,6 +180,35 @@ InshaAllah, By his marcy I will Gain Success
 
 
 
+
+
+@media screen  and (min-width :1000px){
+    
+    #Loader{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: black;
+        z-index: 1000;
+       
+    }
+    
+    #Loader > #main_logo {
+        width: 14em;
+        border-radius: 50%;
+        opacity: .01;
+        position: relative;
+        transition: all 900ms ease-in;
+    }
+   
+
+
+    }
+    
 /*
 بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ  ﷺ  
 InshaAllah, By his marcy I will Gain Success 
@@ -459,12 +472,9 @@ footer > .ft_div2{
 }
 
 
-
-
-   
 @media screen and (min-width :1000px ) {
     footer {
-        background: #424242;
+        background: #363636;
         display: flex;
         flex-direction: column;
         justify-content: left;
@@ -567,26 +577,22 @@ footer > .ft_div2{
     #ft_social_icon_div > a {
         color: rgba(255, 255, 255, 0.918);
         text-decoration: none;
-        border-radius: 50%;
         width: 2em;
         height: 2em;
-        background:goldenrod;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        overflow: hidden;
+       
     }
 
-    #ft_social_icon_div > a  > i {
+    #ft_social_icon_div > a  > img {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        font-size: 1em;
         width: 100%;
         height: 100%;
-
     }
 
     footer > .ft_div2{
@@ -802,23 +808,24 @@ header > .m_nav_i , header > .m_nav {
         justify-content: center;
         align-items: center;
         width: 100%;
-        min-height: 5em;
+        height: auto;
         background: transparent;
-        position: fixed;
-        z-index: 100;
+        position: absolute;
+        z-index: 300;
+        padding:14px 0px;
     }
     
     header > .hd-icon-div{
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: left;
         align-items: center;
-        width: 25%;
+        width: 16em;
 
     }
     
     .hd-icon{
-        width: 65px;
+        width: 55px;
         border-radius: 50%;
     }
     
@@ -827,7 +834,7 @@ header > .m_nav_i , header > .m_nav {
         flex-direction: row;
         justify-content: right;
         align-items: center;
-        width: 50%;
+        width: 38.5em;
         column-gap: 1.4em;
     }
     
@@ -840,17 +847,17 @@ header > .m_nav_i , header > .m_nav {
      
     header > nav > div > a {
         color:white;
-        opacity: .85;
         text-decoration: none;
         font-size: var(--first-fs);
+        font-weight: 500;
     }
     
     header > .hd-btn-div{
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: right;
         align-items:center;
-        width: 25%;
+        width: 16em;
 
     }
      
@@ -1597,8 +1604,8 @@ InshaAllah, By his marcy I will Gain Success
         display: flex;
         flex-direction: row;
         justify-content:center;
-        align-items: center;
-        background: white;
+        align-items: start;
+        background: whitesmoke;
         padding: 4em 0em;
         min-height: 300px;
         column-gap: 3.5em;
@@ -1607,7 +1614,7 @@ InshaAllah, By his marcy I will Gain Success
     #hm_about_us_article > div:nth-child(1){
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: start;
         width: 40%;
         row-gap: 0.8em;
@@ -1623,12 +1630,10 @@ InshaAllah, By his marcy I will Gain Success
     
     #hm_about_us_article > div:nth-child(1) > h2{
         color: black;
-        font-size: 1.75em;
+        font-size: 2.15em;
         font-weight: 500;
         text-transform: uppercase;
     }
-    
-    
     #hm_about_us_article > div:nth-child(1) > p{
         color: rgb(32, 30, 30);
         text-transform: capitalize;
@@ -1637,7 +1642,6 @@ InshaAllah, By his marcy I will Gain Success
         text-align: justify;
         line-height: 1.35em;
     }
-    
     #hm_about_us_article > div:nth-child(1) > button{
         width: 10.7em;
         height: 3.3em;
@@ -1648,7 +1652,6 @@ InshaAllah, By his marcy I will Gain Success
         font-weight: 600;
         text-transform: uppercase;
     }
-    
     #hm_about_us_article > div:nth-child(2){
         width: 35%;
         height: 30em;
@@ -1661,13 +1664,10 @@ InshaAllah, By his marcy I will Gain Success
         justify-content: flex-end;
         align-items: end;
     }
-    
     #hm_about_us_article > div:nth-child(2) > img {
         width: 100%;
         display: none;
     }
-
-
     #hm_about_us_article > div:nth-child(2) > div {
         display: flex;
         flex-direction: row;
@@ -1821,7 +1821,7 @@ InshaAllah, By his marcy I will Gain Success
         row-gap: 0em;
         padding: 0em ;
         padding-top: 4em;
-        background: #ffffff;
+        background: whitesmoke;
     }
     
     .heading_section b{
@@ -1853,7 +1853,7 @@ InshaAllah, By his marcy I will Gain Success
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        background: #fff;
+        background: whitesmoke;
         padding-top: 1.4em;
         padding-bottom: 3em;
         padding-top: 3em;
@@ -1884,6 +1884,7 @@ InshaAllah, By his marcy I will Gain Success
     /*-------------------- course Section -------------------------*/
     #hm_progress_section + section {
         padding: 0px;
+        background-color: whitesmoke;
     }
 
 
@@ -1892,7 +1893,7 @@ InshaAllah, By his marcy I will Gain Success
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        background: #fff;
+        background: whitesmoke;
         column-gap: 3em;
         padding-top: 2.6em;
         padding-bottom: 2em;
@@ -1908,15 +1909,18 @@ InshaAllah, By his marcy I will Gain Success
         background:rgb(255, 255, 255);
         width: 20em;
         min-height: 8em;
-    
+        box-shadow: 0px 0px 10px #00000016;
+        padding-bottom: 0em;
+
     }
     
     
     .courses_section > div >img {
-    width: 94%;
+    width: 100%;
     height: 13em;
     object-fit: cover;
     object-position:top center;
+    margin-bottom: .65em;
     }
     
     
@@ -1956,6 +1960,7 @@ InshaAllah, By his marcy I will Gain Success
     position: relative;
     font-weight: 600;
 font-size: 1.05em;
+margin-bottom: .65em;
     }
 
     .courses_section > div > div > button > i {
@@ -2085,6 +2090,92 @@ font-size: 1.05em;
         color: #d8d8d8;
 
     }
+       
+    
+    
+    
+    
+    
+    
+    
+    
+    /*-----------------------------------coach article--------------------------------------- */
+       #coach_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding:4em 4em 4em 4em;
+        background: whitesmoke;
+       row-gap: .5em;
+    }
+    #coach_container > h5{
+        font-size: 1.05em;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: var(--main-cl);
+    }
+    #coach_container > h2{
+        font-size: 1.6em;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    #coach_container >div {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 3em;
+        margin-top: 1em;
+    }
+    #coach_container >div > div {
+        width: 20em;
+        background: white;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0px 0px 10px #00000016;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 0em;
+
+        padding: 1em .4em;
+    }
+
+    #coach_container >div > div > img {
+        width: 90%;
+        margin-bottom: 1.1em;
+    }
+
+    #coach_container >div > div > b{
+        margin-bottom: .3em;
+        font-weight: 600;
+        font-size: 1.1em;
+    }
+    #coach_container >div > div > span {
+        margin-bottom: .65em;
+        font-weight: 600;
+        font-size: .9em;
+        color: var(--main-cl);
+    }
+    #coach_container >div > div > div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        column-gap: 1.15em;
+        margin-top: .4em;
+        margin-bottom: 1em;
+    }
+
+    #coach_container >div > div > div > i{
+        font-size: 1.4em;
+        color: black;
+    }
+
 }/*
 بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ  ﷺ  
 InshaAllah, By his marcy I will Gain Success 
@@ -2507,71 +2598,41 @@ header > nav{
 }
 </style>
 
-
-
-
-
-
-
-
-
-
-
 </head>
 
 <body>
      <!----------------- loader-------------------->
     <div id="Loader">
-        <img src="/img/icon.jpg" alt="logo">
+        <img id="main_logo" src="/img/header_icon1.png" alt="Goju Shin Ryu logo">
     </div>
 <script>
-    /*
-بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ  ﷺ  inshaAllah 
-Ya Allaj,  please help in animation
-*/
-
-
+window.addEventListener('load',e => {
   const Loader = document.getElementById('Loader');
-  const Loadingimage = Loader.querySelector('img');
-  let animaionTime =70;
-  function animation() {
+  const main_logo = Loader.querySelector('#main_logo');
+  main_logo.style.opacity=1;
+  setTimeout(() => {
+    main_logo.style.opacity=0.01;
+    main_logo.style.width ='17em';
     setTimeout(() => {
-      Loadingimage.style.opacity = 0.1;
-    setTimeout(e =>  {
-      Loadingimage.style.opacity = 0.2
-    setTimeout(e => {
-      Loadingimage.style.opacity = 0.35;
-    setTimeout(e => {
-      Loadingimage.style.opacity = 0.5;
-    setTimeout(e => {
-        Loadingimage.style.opacity = 0.6;
-    setTimeout(e => {
-      Loadingimage.style.opacity = 0.7;
-    setTimeout(e => {
-      Loadingimage.style.opacity = 0.85;
-    setTimeout(e => {
-      Loadingimage.style.opacity = 1;
-    setTimeout(e => {
-      Loadingimage.style.opacity = 0.01;
-      if (Loadingimage.src.includes('icon.jpg')) {
-        Loadingimage.setAttribute('src', '/img/02572.jpg')
-        return requestAnimationFrame(animation)
-      }
-      Loadingimage.setAttribute('src', '/img/icon.jpg')
-      return requestAnimationFrame(animation)
-    },animaionTime)
-    },animaionTime)
-    },animaionTime)
-    },animaionTime)
-    },animaionTime) 
-    },animaionTime)
-    },animaionTime) 
-    },animaionTime)
-    },animaionTime)
-  } 
+      main_logo.setAttribute('src','/img/02572.png');
+      main_logo.style.opacity=1;
+      setTimeout(() => {
+        main_logo.style.width ='20em';
+        main_logo.style.opacity=0.01;
+      }, 1000);
+    },1000);
+  }, 1000);
   
-  requestAnimationFrame(animation);
+})
 
+
+
+window.addEventListener('load', e => setTimeout(e => { 
+    document.getElementById('Loader').className ='remove_loader';
+    setTimeout(() => {
+     document.getElementById('Loader').remove();
+    }, 350);
+},4000))
 
 
 </script>
@@ -2905,7 +2966,45 @@ Ya Allaj,  please help in animation
 
 
 
+<!-----------------------------------  section --------------------------------------------->
 
+<article id="coach_container">
+    <h5>Coaches</h5>
+    <h2>Our instructors</h2>
+    <hr>
+    <div>
+        <div class="trainer_box">
+            <img src="http://localhost:5173/img/66554.jpg" alt="">
+            <b>SENSEI VARUN JETTLY</b>
+            <span>CEO of STMA</span>
+            <div class="icon_box">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+        <div class="trainer_box">
+            <img src="http://localhost:5173/img/66554.jpg" alt="">
+            <b>SENSEI VARUN JETTLY</b>
+            <span>CEO of STMA</span>
+            <div class="icon_box">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+        <div class="trainer_box">
+            <img src="http://localhost:5173/img/66554.jpg" alt="">
+            <b>SENSEI VARUN JETTLY</b>
+            <span>CEO of STMA</span>
+            <div class="icon_box">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+    </div>
+</article>
 
 
 
@@ -2956,20 +3055,20 @@ Ya Allaj,  please help in animation
                 
                 <div id="ft_social_icon_div">
                     <a href="http://">
-                        <i class="fa-brands fa-facebook"></i>
+                        <img src="/icon/facebook.png" alt="">
                     </a>  
                     <a href="http://">
-                        <i class="fa-brands fa-x-twitter"></i>
+                        <img src="/icon/twitter.png" alt="" >
                     </a>
                     <a href="http://">
-                        <i class="fa-brands fa-linkedin"></i>
+                        <img src="/icon/youtube.png" alt="">
                     </a>
                     <a href="http://">
-                        <i class="fa-brands fa-instagram"></i>
+                       <img src="/icon/instragram.png" alt="">
                     </a>
                   
                     <a href="http://">
-                        <i class="fa-brands fa-youtube"></i>
+                        <img src="/icon/linkedin.png" alt="">
                     </a>
                       
   
@@ -2998,11 +3097,9 @@ Ya Allaj,  please help in animation
     
 
 </footer>
-
-
-</body>
 <script>
     
+
 let header = document.querySelector('header');
 let headerIcon = document.querySelector('.hd-icon');
 let headerAnchor = header.querySelectorAll('a');
@@ -3014,26 +3111,29 @@ let headerNavIcon = header.querySelector('i')
 let VisibilityObserver = new IntersectionObserver(entries => {
     if (entries[0].isIntersecting) {
         header.style.backgroundColor = 'transparent';
-        headerAnchor.forEach(anchor => anchor.style.color ='#fff');
-        header.style.boxShadow = '0px 0px 10px rgba(0,0,0,0)';
-        headerIcon.setAttribute('src','/img/newhi.jpg');
-        headerNavIcon.style.color= 'rgba(255, 255,255,.85)';
+        headerAnchor.forEach(anchor =>{ 
+            anchor.style.fontWeight=500;
+            anchor.style.color ='#fff';
+        });
+        headerIcon.setAttribute('src','/img/header_icon1.png');
+        headerNavIcon.style.color= 'white';
         return
     }
     if (!entries[0].isIntersecting) {
-        header.style.backgroundColor = 'white';
-        headerAnchor.forEach(anchor => anchor.style.color ='#000');
-        header.style.boxShadow = '0px 0px 10px rgba(0,0,0,0.15)';
-        headerIcon.setAttribute('src' ,'/img/n.png');
-        headerNavIcon.style.color= 'rgba(0,0,0,1)';
-
+        header.style.backgroundColor =  'transparent';;
+        headerAnchor.forEach(anchor => {
+            anchor.style.fontWeight=600;
+            anchor.style.color ='#000';
+        });
+        headerIcon.setAttribute('src' ,'/img/header_icon1.png');
+        headerNavIcon.style.color= 'black';
+        
         return
     }
 })
 
 
-VisibilityObserver.observe(heroH1)
-
+VisibilityObserver.observe(heroH1);
 
 let video = document.querySelector('video') ;
 let heroSection = document.getElementById('Hero_section')
@@ -3067,13 +3167,12 @@ window.addEventListener('resize',  e => {
 })
 
 
-window.addEventListener('load', e => setTimeout(e => {
-    document.getElementById('Loader').className ='remove_loader'
-    setTimeout(() => {
-     document.getElementById('Loader').remove()
-    }, 350);
-},2000))
+
+
+
 
 
 </script>
+
+</body>
 </html>

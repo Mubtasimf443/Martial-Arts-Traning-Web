@@ -261,9 +261,6 @@ footer > .ft_div2{
 }
 
 
-
-
-   
 @media screen and (min-width :1000px ) {
     footer {
         background: #363636;
@@ -369,26 +366,22 @@ footer > .ft_div2{
     #ft_social_icon_div > a {
         color: rgba(255, 255, 255, 0.918);
         text-decoration: none;
-        border-radius: 50%;
         width: 2em;
         height: 2em;
-        background:goldenrod;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        overflow: hidden;
+       
     }
 
-    #ft_social_icon_div > a  > i {
+    #ft_social_icon_div > a  > img {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        font-size: 1em;
         width: 100%;
         height: 100%;
-
     }
 
     footer > .ft_div2{

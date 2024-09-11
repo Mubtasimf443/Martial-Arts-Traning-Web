@@ -72,11 +72,11 @@ InshaAllah, By his marcy I will Gain Success
 
 @keyframes loadingOpacity {
     from{
-        opacity:0.04;
+        opacity:0.01;
       }
 
     to{
-        opacity: 0.8;
+        opacity: 1;
       }
 }
 
@@ -102,36 +102,20 @@ InshaAllah, By his marcy I will Gain Success
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border-image-source: url('/img/samurai_theme.png');
-        border-image-slice: fill 1;
-        background-position: center right;
-        background-repeat: no-repeat;
+        background: black;
         z-index: 1000;
-        transition: all .1s ease;
+       
     }
     
     #Loader > #main_logo {
-        width: 9em;
+        width: 14em;
         border-radius: 50%;
         opacity: .01;
         position: relative;
+        transition: all 900ms ease-in;
     }
-    #Loader >  .loader_y_image_box{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        column-gap: 0px;
-        position: relative;
-        translate:0px 38vh;
+   
 
-    }
-
-    #Loader > .loader_y_image_box >img {
-        width: 5.5em;
-        height:auto ;
-        opacity: .05;
-    }
 
     }
     

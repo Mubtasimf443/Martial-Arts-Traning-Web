@@ -3,12 +3,12 @@
 InshaAllah, By his marcy I will Gain Success 
 */
 
-window.addEventListener('load', e => setTimeout(e => {
-    document.getElementById('Loader').className ='remove_loader'
+window.addEventListener('load', e => setTimeout(e => { 
+    document.getElementById('Loader').className ='remove_loader';
     setTimeout(() => {
-     document.getElementById('Loader').remove()
+     document.getElementById('Loader').remove();
     }, 350);
-},665000))
+},4000))
 
 
 

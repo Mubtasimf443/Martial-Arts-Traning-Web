@@ -14,17 +14,23 @@ let headerNavIcon = header.querySelector('i')
 let VisibilityObserver = new IntersectionObserver(entries => {
     if (entries[0].isIntersecting) {
         header.style.backgroundColor = 'transparent';
-        headerAnchor.forEach(anchor => anchor.style.color ='#fff');
-        headerIcon.setAttribute('src','/img/newhi.jpg');
+        headerAnchor.forEach(anchor =>{ 
+            anchor.style.fontWeight=500;
+            anchor.style.color ='#fff';
+        });
+        headerIcon.setAttribute('src','/img/header_icon1.png');
         headerNavIcon.style.color= 'white';
         return
     }
     if (!entries[0].isIntersecting) {
         header.style.backgroundColor =  'transparent';;
-        headerAnchor.forEach(anchor => anchor.style.color ='#000');
-        headerIcon.setAttribute('src' ,'/img/n.png');
+        headerAnchor.forEach(anchor => {
+            anchor.style.fontWeight=600;
+            anchor.style.color ='#000';
+        });
+        headerIcon.setAttribute('src' ,'/img/header_icon1.png');
         headerNavIcon.style.color= 'black';
-
+        
         return
     }
 })
